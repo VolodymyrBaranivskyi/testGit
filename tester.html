@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Тест</title>
+		<link rel = "stylesheet" type = "text/css" href = "testStyles.css">
+	</head>
+<body>
+	<form id = "GCTest">
+		Проверочный тест для класса GCTester
+		~JavaScript и Java это:
+			^Один и тот же язык программирования.
+			^Два разных языка программирования.
+			^Два диалекта одного языка программирования, почти не имеющих разницы.
+
+		~JScript это:
+			^Другое название JavaScript.
+			^Язык программирования, не имеющий отношения к JavaScript.
+			^Реализация ECMAScript от Компании Microsoft, имеет некоторые отличительные от JavaScript особенности.
+			^Урезанная версия JavaScript.
+
+		~*Active-X это:
+			^Язык программирования, альтернатива js.
+			^Программа для проверки валидности кода js.
+			^Технология, разработанная компанией Microsoft.
+			^Браузер от Yahoo.
+			^Технология доступа к операционной системе Windows и её элементам из различных программ.
+			^Возможность, из всех браузеров доступная только в MSIE и производных (старые версии maxton ad.ex.).
+
+		~Что произойдёт при выполнении следующего кода в js?
+(
+	function () {
+		return function () {
+			return function () {
+				alert("Матрёшка!")
+			}
+		}
+	}
+)()()()
+			^Ничего.
+			^Интерпретатор выдаст ошибку.
+			^Появится сообщение.
+	</form>
+	<script src = "GCTester.js"></script>
+	<script>
+		var answers = [
+			1, 2, [2,4,5], 2
+		]
+		test = new GCTester(answers);
+	</script>
+</body>
+</html>
